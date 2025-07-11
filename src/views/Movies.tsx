@@ -1,15 +1,7 @@
-import { useEffect, useState } from "react";
-import { getPopularMovies } from "../services/movies.service";
-import type { Movie } from "../model/movie.model";
+import { useMovies } from "../hooks/useMovies";
 
 export function Movies() {
-  const [movies, setMovies] = useState<Movie[]>([]);
-
-  useEffect(() => {
-    getPopularMovies().then(({ data }) => {
-      setMovies(data.results)
-    })
-  }, [])
+  const movies = useMovies();
 
   return (
     <section>
