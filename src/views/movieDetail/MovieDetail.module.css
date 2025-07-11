@@ -1,0 +1,14 @@
+.movie {
+  background-color: darkgray;
+  border-radius: 5px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.movie h1 {
+  text-align: center;
+}
